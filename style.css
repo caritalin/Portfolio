@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+
   }
 
 html {
     background-image: url("background.jpg") ;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     background-size: cover;
 
 }
@@ -18,7 +19,17 @@ section {
     display: flex;
     column-width: 100px;
     align-items: center;
+    margin: 5%;
+
   }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px 50px 50px;
+    width: 100%;
+    color: white;
+margin: 0;
+}
 
 .column {
     flex: 50%;
@@ -27,13 +38,6 @@ section {
     width: 80%;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 50px 50px 50px;
-    width: 100%;
-    color: white;
-
-}
 
 #navbar {
     position: sticky;
