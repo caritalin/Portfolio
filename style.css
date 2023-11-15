@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-
   }
 
 html {
@@ -15,29 +14,41 @@ html {
 section {
     box-sizing: content-box;
 }
-.row {
-    display: flex;
-    column-width: 100px;
-    align-items: center;
-    margin: 5%;
-
-  }
-
-  header {
+header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 50px 50px 50px;
     width: 100%;
     color: white;
 margin: 0;
 }
-
-.column {
-    flex: 50%;
-    padding: 100px;
-    height: 200px; /* Should be removed. Only for demonstration */
-    width: 80%;
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    flex-wrap: nowrap; /* Correct property for preventing wrapping */
 }
 
+
+.box {
+    display: inline-block; /* Display boxes next to each other */
+    margin: 10px; /* Add some spacing between the boxes */
+    padding: 10px; /* Add padding inside the boxes */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    text-align: center; /* Center the text inside the boxes */
+
+}
+
+
+#box1 {
+    width: 100px;
+    height: 100px;
+
+}
+#box2 {
+    width: 150px;
+    height: 200px;
+
+}
 
 #navbar {
     position: sticky;
