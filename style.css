@@ -11,6 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Set minimum height to full viewport height */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    padding: 20px;
+
 }
 html {
     background-image: url("background.jpg") ;
@@ -96,11 +101,6 @@ max-height: 80%;
     top: 0;
 }
 
-footer {
-    padding: 20px 50px 50px 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: aliceblue;
-    text-align: center;
-    margin-top: auto; /* Push the footer to the bottom */
-    height: 50vh;
+footer{
+    color: rgb(113, 192, 168);
 }
