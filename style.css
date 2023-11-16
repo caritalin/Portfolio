@@ -97,9 +97,10 @@ max-height: 80%;
 }
 
 footer {
+    padding: 20px 50px 50px 50px;
     background-color: rgba(0, 0, 0, 0.5);
     color: aliceblue;
     text-align: center;
     margin-top: auto; /* Push the footer to the bottom */
-
+    height: 50vh;
 }
