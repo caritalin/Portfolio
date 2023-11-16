@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;
     margin: 0;
-  }
+    max-width: 100%;
+}
+
 body {
     font-family: 'Gruppo', cursive;
     color: #000;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to full viewport height */
 }
 html {
     background-image: url("background.jpg") ;
@@ -67,7 +73,7 @@ header {
 }
 .down-box {
     display: inline-block; /* Display boxes next to each other */
-    margin: 10px; /* Add some spacing between the boxes */
+    margin: 20px; /* Add some spacing between the boxes */
     padding: 10px; /* Add padding inside the boxes */
     box-sizing: border-box; /* Include padding and border in the box's total width and height */
     text-align: center; /* Center the text inside the boxes */
@@ -92,6 +98,8 @@ max-height: 80%;
 
 footer {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 400px;
-    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+
 }
