@@ -36,7 +36,7 @@ h3 {
     border: 2px solid #848484; /* Adjust border style as needed */
     box-sizing: border-box; /* Include border in the box's total width and height */
     overflow: auto; /* Allow content to be scrollable when necessary */
-    padding: 10px; /* Add padding inside the border */
+    padding: 0; /* Add padding inside the border */
 }
 /* Hide the scrollbar */
 .border-container::-webkit-scrollbar {
@@ -115,27 +115,24 @@ max-height: 80%;
     max-width: 80%;
     max-height: 80%;
 }
-#navbar {
-    position: sticky;
-    top: 0;
-}
 
 
 /* Mobile adjustments */
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: ;
+        font-size: 30px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
     h2 {
-        font-size: medium;
+        font-size: 20px;
     }
     p {
-        font-size: medium;
+        font-size: 18px;
     }
+
 
 
     header {
