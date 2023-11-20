@@ -121,8 +121,24 @@ max-height: 80%;
 }
 
 
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: ;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: medium;
+    }
+    p {
+        font-size: medium;
+    }
 
 
-footer {
-    color: rgb(183, 183, 183);
+    header {
+        padding: 5px 10px 10px 10px;
+    }
 }
