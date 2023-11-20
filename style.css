@@ -3,27 +3,34 @@
     margin: 0;
     max-width: 100%;
 }
-
-body {
+html, body {
     font-family: 'Gruppo', cursive;
     color: #000;
-    overflow: hidden; /* Prevent scrolling */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set minimum height to full viewport height */
-    border-width: 2px;
-    border-style: solid;
-    border-color: #333;
-    padding: 20px;
 
 }
 html {
-    background-image: url("background.jpg") ;
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  }
+  
+body {
 
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars due to margin */
 }
+
+.border-container {
+    position: relative;
+    width: calc(100vw - 40px); /* 100% of the viewport width minus the total padding */
+    height: calc(100vh - 40px); /* 100% of the viewport height minus the total padding */
+    margin: 20px; /* Add margin instead of padding */
+    border: 2px solid #848484; /* Adjust border style as needed */
+    box-sizing: border-box; /* Include border in the box's total width and height */
+  }
+
+
 
 header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -101,6 +108,9 @@ max-height: 80%;
     top: 0;
 }
 
-footer{
-    color: rgb(113, 192, 168);
+
+
+
+footer {
+    color: rgb(183, 183, 183);
 }
