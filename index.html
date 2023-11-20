@@ -15,7 +15,90 @@
         <h1>Carita Lindfors</h1>
         <h3>IT-student</h3>
     </header>
-    
+<!-- Navigation buttons -->
+<nav>
+  <a href="#main-content" onclick="loadContent('Main')" class="selected">Home</a>
+  <a href="#projects" onclick="loadContent('Projects')">Projects</a>
+  <a href="#info" onclick="loadContent('Info')">Info</a>
+  <a href="#contact" onclick="loadContent('Contact')">Contact</a>
+</nav>
+
+
+        <!-- Main content container -->
+        <div id="main-content" class="box-container">
+          <!-- Default content when the page loads -->
+          <h2>Welcome to my portfolio!</h2>
+          <p>This is the default content. Click on "Projects" to see the list of projects.</p>
+      </div>
+
+
+
+        <script>
+
+                  // Function to add a class to the selected link
+        function selectLink(link) {
+            // Remove the 'selected' class from all links
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('selected');
+            });
+
+            // Add the 'selected' class to the clicked link
+            link.classList.add('selected');
+        }
+          // Function to load content for different sections
+          function loadContent(section) {
+              // Get the main content container
+              var mainContent = document.getElementById('main-content');
+
+              // Replace the existing content based on the selected section
+              switch (section) {
+                  case 'Projects':
+                      mainContent.innerHTML = `
+                          <h2>List of Projects</h2>
+                          <ul>
+                              <li>Project 1</li>
+                              <li>Project 2</li>
+                              <li>Project 3</li>
+                              <!-- Add more projects as needed -->
+                          </ul>
+                      `;
+                      break;
+                  case 'Info':
+                      mainContent.innerHTML = `
+                          <h2>Personal Information</h2>
+                          <p>This is where you can provide information about yourself.</p>
+                      `;
+                      break;
+                  case 'Contact':
+                      mainContent.innerHTML = `
+                          <h2>Contact Information</h2>
+                          <p>Feel free to contact me at example@email.com.</p>
+                      `;
+                      break;
+                  default:
+                      mainContent.innerHTML = `
+                          <h2>Welcome to my portfolio!</h2>
+                          <p>This is the default content. Click on the navigation links to see specific sections.</p>
+                      `;
+                      break;
+              }
+          }
+
+          // Smooth scroll script
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                  e.preventDefault();
+
+                                  // Add the 'selected' class to the clicked link
+                selectLink(this);
+
+                  document.querySelector(this.getAttribute('href')).scrollIntoView({
+                      behavior: 'smooth'
+                  });
+              });
+          });
+      </script>
+    <!--
     <section>
     <div class="box-container">
         <div id="top-box1" class="top-box">
@@ -49,6 +132,7 @@
             </p>            </div>
       </div>
       </section>
+      -->
     </div>
     
 </body>

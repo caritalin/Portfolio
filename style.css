@@ -21,11 +21,16 @@ body {
 }
 h1 {
     margin: 20px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-h3 {
+h3, h2 {
+    font-size: 40px;
     margin: 20px;
+}
+
+p {
+    font-size: 30px;
 }
 
 .border-container {
@@ -58,7 +63,47 @@ header {
     flex-wrap: nowrap; /* Correct property for preventing wrapping */
 }
 
+        /* Style for navigation buttons */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            font-size: 22px; /* Adjust the font size as needed */
+        }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav a.selected {
+            /* Style for the selected link */
+            color: #ccc;
+            font-weight: bold;
+            position: relative;
+        }
+
+        nav a.selected::before {
+            /* Style for the dot */
+            content: '\2022'; /* Unicode character for a dot */
+            color: #ccc;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
 .top-box {
     display: inline-block; /* Display boxes next to each other */
     margin: 20px; /* Add some spacing between the boxes */
