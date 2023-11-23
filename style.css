@@ -18,22 +18,32 @@ html {
 
   }
   
-body {
-    margin: 0;
-    overflow: hidden; /* Prevent scrollbars due to margin */
+  body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px 20px 50px;
+    width: 100%;
+    color: white;
 }
 h1 {
-    margin: 20px;
+    margin: 0; /* Remove top and bottom margin for h1 */
     font-size: 50px;
 }
-
-h3, h2 {
+h2 {
+    font-size: 25px;
+    margin: 5%;
+}
+h3 {
     font-size: 30px;
-    margin: 20px;
+    margin: 0; /* Remove top and bottom margin for h3 */
 }
 
 p {
     font-size: 30px;
+    margin: 0;
 }
 
 .border-container {
@@ -52,30 +62,26 @@ p {
 }
 
 
-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 50px 50px 50px;
-    width: 100%;
-    color: white;
-    margin: 0;
-}
+
 .box-container {
+    color: aliceblue;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Center items vertically */
-    flex-wrap: nowrap; /* Correct property for preventing wrapping */
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end; /* Center items vertically */
+    margin: 20px;
 }
 
 /* Style for navigation buttons */
 nav {
+    margin: 20px;
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
     padding: 10px;
     position: sticky;
     top: 0;
     z-index: 1;
-    font-size: 22px; /* Adjust the font size as needed */
+    font-size: 22px;
 }
 
 nav a {
