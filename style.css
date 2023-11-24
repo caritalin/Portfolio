@@ -33,16 +33,16 @@ h1 {
     font-size: 50px;
 }
 h2 {
-    font-size: 25px;
-    margin: 5%;
+    font-size: 30px;
+    margin: 0;
 }
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0; /* Remove top and bottom margin for h3 */
 }
 
 p {
-    font-size: 30px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -68,7 +68,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Center items vertically */
-    margin: 20px;
 }
 
 /* Style for navigation buttons */
