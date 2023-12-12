@@ -136,10 +136,12 @@ li, ul {
         font-size: 18px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 17px;
     }
     p {
-        font-size: 18px;
+        font-size: 13px;
+        text-align: right;
+        padding: 20px 5px 20px 100px;
     }
 nav {
     font-size: 15px;
@@ -156,10 +158,10 @@ nav a.selected::before {
 }
 li, ul {
     font-size: 15px;
+    padding-top: 10px;
 }
 
-
-    header {
-        padding: 5px 10px 10px 10px;
-    }
+header {
+    padding: 5px 10px 10px 10px;
+}
 }
