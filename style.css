@@ -46,6 +46,8 @@ h3 {
 p {
     font-size: 22px;
     margin: 0;
+    max-width: 30%;
+    padding-top: 20px;
 }
 
 .border-container {
@@ -142,6 +144,7 @@ li, ul {
         font-size: 13px;
         text-align: right;
         padding: 20px 5px 20px 100px;
+        max-width: 90%;
     }
 nav {
     font-size: 15px;
@@ -162,6 +165,6 @@ li, ul {
 }
 
 header {
-    padding: 5px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 }
