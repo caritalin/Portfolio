@@ -32,9 +32,10 @@
         <!-- Main content container -->
         <div id="main-content" class="box-container">
             <!-- Default content when the page loads -->
-            <p>An aspiring IT engineer with a passion for turning ideas into innovative solutions. This portfolio is a glimpse into my journey, showcasing projects that reflect my skills in web development, programming, cyber security and more.</p>
-            <p>As a continuous learner, I am driven to explore new technologies and embrace challenges. From crafting responsive web interfaces to delving into diverse tech domains, I am dedicated to creating meaningful and impactful solutions.</p>
+            <p>An aspiring IT engineer with a passion for turning ideas into innovative solutions. This portfolio offers a glimpse into my journey, showcasing projects that reflect my diverse skills in web development, programming, and cybersecurity.</p>
+            <p>As a continuous learner, I am driven to explore new technologies and embrace challenges. Whether it's crafting responsive web interfaces, diving into diverse tech domains, or implementing cybersecurity measures, I am dedicated to creating meaningful and impactful solutions.</p>
             <p>Feel free to explore my projects, and don't hesitate to reach out if you have any questions or if you're interested in cooperation. Let's build something great together!</p>
+            
         </div>
     </div>
 
@@ -69,13 +70,25 @@
               switch (section) {
                   case 'Projects':
                       mainContent.innerHTML = `
-                          <h2>List of Projects</h2>
                           <ul>
-                              <li>Project 1</li>
-                              <li>Project 2</li>
-                              <li>Project 3</li>
-                              <!-- Add more projects as needed -->
+                          <a class="contactLink" href="https://caritalin.github.io/OldPortfolio/" target="_blank">Old Portfolio<i class=""></i> </a>
                           </ul>
+                          <ul>
+                          <a class="contactLink" href="https://caritalin.github.io/weather/" target="_blank">Weather page with online data<i class=""></i> </a>
+                          </ul>     
+                            <ul>
+                          <a class="contactLink" href="https://caritalin.github.io/reactiongame/" target="_blank">Reaction Game<i class=""></i> </a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://caritalin.github.io/weatherstatistics/" target="_blank">Weather page with statistic data<i class=""> (Broken connection)</i></a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://caritalin.github.io/CV_in_English/" target="_blank">Old CV in English<i class=""></i> </a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://caritalin.github.io/CV_in_Finnish/" target="_blank">Old CV in Finnish<i class=""></i> </a>
+                          </ul>
+
                       `;
                       break;
                   case 'Info':
