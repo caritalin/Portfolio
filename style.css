@@ -21,6 +21,8 @@ html {
   body {
     display: flex;
     flex-direction: column;
+    padding-top: 10px; /* Add padding to the top of the body */
+
 }
 header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -48,14 +50,18 @@ p {
 
 .border-container {
     position: relative;
-    width: calc(100vw - 40px); /* 100% of the viewport width minus the total padding */
-    height: calc(100vh - 40px); /* 100% of the viewport height minus the total padding */
-    margin: 20px; /* Add margin instead of padding */
+    width: calc(100vw - 50px); /* 100% of the viewport width minus the total padding */
+    height: calc(100vh - 60px); /* 100% of the viewport height minus the total padding */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
     border: 2px solid #848484; /* Adjust border style as needed */
     box-sizing: border-box; /* Include border in the box's total width and height */
     overflow: auto; /* Allow content to be scrollable when necessary */
     padding: 0; /* Add padding inside the border */
 }
+
 /* Hide the scrollbar */
 .border-container::-webkit-scrollbar {
     width: 0;
@@ -68,6 +74,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Center items vertically */
+    padding-right: 40px; /* Add padding to the right side */
+
 }
 
 /* Style for navigation buttons */
@@ -115,62 +123,6 @@ nav a:hover {
 
 li, ul {
     font-size: 30px;
-}
-.top-box {
-    display: inline-block; /* Display boxes next to each other */
-    margin: 20px; /* Add some spacing between the boxes */
-    padding: 10px; /* Add padding inside the boxes */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    text-align: center; /* Center the text inside the boxes */
-    font-size: 25px;
-}
-
-
-#top-box1 {
-    background-color:rgba(29, 70, 70, 0.5);
-    max-width: 80%;
-    max-height: 80%;
-
-}
-#top-box2 {
-    background-color: rgba(40, 93, 94, 0.5);
-    max-width: 80%;
-    max-height: 80%;
-
-}
-.center-box {
-    display: inline-block; /* Display boxes next to each other */
-    margin: 20px; /* Add some spacing between the boxes */
-    padding: 10px; /* Add padding inside the boxes */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    text-align: center; /* Center the text inside the boxes */
-    font-size: 25px;
-}
-
-#center-box {
-    background-color: rgba(40, 93, 94, 0.5);
-    height: fit-content;
-
-}
-.down-box {
-    display: inline-block; /* Display boxes next to each other */
-    margin: 20px; /* Add some spacing between the boxes */
-    padding: 10px; /* Add padding inside the boxes */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    text-align: center; /* Center the text inside the boxes */
-    font-size: 25px;
-}
-
-#down-box1 {
-background-color:rgba(29, 70, 70, 0.5);
-max-width: 80%;
-max-height: 80%;
-}
-
-#down-box2 {
-    background-color: rgba(40, 93, 94, 0.5);
-    max-width: 80%;
-    max-height: 80%;
 }
 
 
