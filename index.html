@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:wght@100&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet"></head>
 <body>
+      <!-- Loading Screen -->
+      <div class="loading-screen">
+        <h1>Carita Lindfors Portfolio</h1>
+    </div>
+
   <div class="border-container">
     <header>
         <h1>Carita Lindfors</h1>
@@ -35,6 +40,20 @@
   </body>
 
         <script>
+  // JavaScript to handle the transition from loading screen to main content
+  document.addEventListener("DOMContentLoaded", function() {
+            // Hide the loading screen after a delay (adjust the delay as needed)
+            setTimeout(function() {
+                document.querySelector('.loading-screen').style.opacity = 0;
+                document.querySelector('.loading-screen').style.pointerEvents = 'none';
+            }, 1000); // 1000 milliseconds (1 seconds) delay
+
+            // Remove the loading screen from the DOM after the transition
+            setTimeout(function() {
+                document.querySelector('.loading-screen').remove();
+            }, 2000); // 2000 milliseconds (2 seconds) total time
+        });
+
         // Function to add a class to the selected link
         function selectLink(link) {
             // Remove the 'selected' class from all links
