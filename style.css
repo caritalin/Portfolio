@@ -26,6 +26,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Prevent default body overflow */
+    scroll-behavior: smooth;
+
 }
 
 html {
@@ -33,7 +35,6 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    scroll-behavior: smooth 2s;
 
   }
   
@@ -96,7 +97,8 @@ p {
     flex-direction: column;
     align-items: flex-end; /* Center items vertically */
     padding-right: 40px; /* Add padding to the right side */
-
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Add a fade transition effect */
 }
 
 /* Style for navigation buttons */
@@ -157,7 +159,7 @@ li, ul {
         font-size: 18px;
     }
     h2 {
-        font-size: 17px;
+        font-size: 13px;
     }
     p {
         font-size: 13px;

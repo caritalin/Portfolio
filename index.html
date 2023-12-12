@@ -5,90 +5,73 @@
     <link rel="shortcut icon" href="background.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:wght@100&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:wght@100&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+</head>
 <body>
-      <!-- Loading Screen -->
-      <div class="loading-screen">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
         <h1>Carita Lindfors Portfolio</h1>
     </div>
 
-  <div class="border-container">
-    <header>
-        <h1>Carita Lindfors</h1>
-        <h3>IT Engineer</h3>
-    </header>
-<!-- Navigation buttons -->
-<nav>
-  <a href="#main-content" onclick="loadContent('Main')" class="selected">Home</a>
-  <a href="#projects" onclick="loadContent('Projects')">Projects</a>
-  <a href="#info" onclick="loadContent('Info')">Info</a>
-  <a href="#contact" onclick="loadContent('Contact')">Contact</a>
-</nav>
+    <div class="border-container">
+        <header>
+            <h1>Carita Lindfors</h1>
+            <h3>IT Engineer</h3>
+        </header>
 
+        <!-- Navigation buttons -->
+        <nav>
+            <a href="#main-content" onclick="loadContent('Main')" class="selected">Home</a>
+            <a href="#projects" onclick="loadContent('Projects')">Projects</a>
+            <a href="#info" onclick="loadContent('Info')">Info</a>
+            <a href="#contact" onclick="loadContent('Contact')">Contact</a>
+        </nav>
 
         <!-- Main content container -->
         <div id="main-content" class="box-container">
-          <!-- Default content when the page loads -->
-          <p>An aspiring IT engineer with a passion for turning ideas into innovative solutions. This portfolio is a glimpse into my journey, showcasing projects that reflect my skills in web development, programming, and more.</p>
-          <p>As a continuous learner, I am driven to explore new technologies and embrace challenges. From crafting responsive web interfaces to delving into diverse tech domains, I am dedicated to creating meaningful and impactful solutions.</p>
-          <p>Feel free to explore my projects, and don't hesitate to reach out if you have any questions or if you're interested in cooperation. Let's build something great together!</p>
-        
-      </div>
-
+            <!-- Default content when the page loads -->
+            <p>An aspiring IT engineer with a passion for turning ideas into innovative solutions. This portfolio is a glimpse into my journey, showcasing projects that reflect my skills in web development, programming, and more.</p>
+            <p>As a continuous learner, I am driven to explore new technologies and embrace challenges. From crafting responsive web interfaces to delving into diverse tech domains, I am dedicated to creating meaningful and impactful solutions.</p>
+            <p>Feel free to explore my projects, and don't hesitate to reach out if you have any questions or if you're interested in cooperation. Let's build something great together!</p>
+        </div>
     </div>
 
-  </body>
 
-        <script>
-  // JavaScript to handle the transition from loading screen to main content
-  document.addEventListener("DOMContentLoaded", function() {
-            // Hide the loading screen after a delay (adjust the delay as needed)
-            setTimeout(function() {
-                document.querySelector('.loading-screen').style.opacity = 0;
-                document.querySelector('.loading-screen').style.pointerEvents = 'none';
-            }, 1000); // 1000 milliseconds (1 seconds) delay
-
-            // Remove the loading screen from the DOM after the transition
-            setTimeout(function() {
-                document.querySelector('.loading-screen').remove();
-            }, 2000); // 2000 milliseconds (2 seconds) total time
-        });
-
-        // Function to add a class to the selected link
-        function selectLink(link) {
-            // Remove the 'selected' class from all links
-            document.querySelectorAll('nav a').forEach(a => {
-                a.classList.remove('selected');
-            });
-
-            // Add the 'selected' class to the clicked link
-            link.classList.add('selected');
-        }
-          // Function to load content for different sections
-          function loadContent(section) {
-              // Get the main content container
-              var mainContent = document.getElementById('main-content');
-
-              // Replace the existing content based on the selected section
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+              document.querySelector('.loading-screen').style.opacity = 0;
+              document.querySelector('.loading-screen').style.pointerEvents = 'none';
+          }, 1000);
+  
+          setTimeout(function () {
+              document.querySelector('.loading-screen').remove();
+          }, 2000);
+      });
+  
+      function loadContent(section) {
+          var mainContent = document.getElementById('main-content');
+          var boxContainer = document.querySelector('.box-container');
+  
+          document.querySelectorAll('nav a').forEach(a => {
+              a.classList.remove('selected');
+          });
+  
+          event.target.classList.add('selected');
+  
+          // Fade out the existing content
+          boxContainer.style.opacity = 0;
+  
+          // Replace the existing content after the fade-out animation completes
+          setTimeout(function () {
               switch (section) {
                   case 'Projects':
                       mainContent.innerHTML = `
                           <h2>List of Projects</h2>
                           <ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-                              <ul>Project 1</ul>
-
-
+                              <li>Project 1</li>
+                              <li>Project 2</li>
+                              <li>Project 3</li>
                               <!-- Add more projects as needed -->
                           </ul>
                       `;
@@ -105,33 +88,19 @@
                           <p>Feel free to contact me at example@email.com.</p>
                       `;
                       break;
-                      
                   default:
                       mainContent.innerHTML = `
-                    
                           <p>An aspiring IT engineer with a passion for turning ideas into innovative solutions. This portfolio is a glimpse into my journey, showcasing projects that reflect my skills in web development, programming, and more.</p>
                           <p>As a continuous learner, I am driven to explore new technologies and embrace challenges. From crafting responsive web interfaces to delving into diverse tech domains, I am dedicated to creating meaningful and impactful solutions.</p>
                           <p>Feel free to explore my projects, and don't hesitate to reach out if you have any questions or if you're interested in cooperation. Let's build something great together!</p>
-                              `;
+                      `;
                       break;
               }
-          }
-
-          // Smooth scroll script
-          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-              anchor.addEventListener('click', function (e) {
-                  e.preventDefault();
-
-                // Add the 'selected' class to the clicked link
-                selectLink(this);
-
-                  document.querySelector(this.getAttribute('href')).scrollIntoView({
-                      behavior: 'smooth'
-                  });
-              });
-          });
-      </script>
-
-    </div>
-    
+  
+              // Fade in the new content
+              boxContainer.style.opacity = 1;
+          }, 500); // 500 milliseconds (0.5 seconds) fade-out time
+      }
+  </script>
+</body>
 </html>
