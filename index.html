@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="background.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:wght@100&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
@@ -84,8 +86,18 @@
                       break;
                   case 'Contact':
                       mainContent.innerHTML = `
-                          <h2>Contact Information</h2>
-                          <p>Feel free to contact me at example@email.com.</p>
+                          <ul>
+                          <a class="contactLink" href="https://www.linkedin.com/in/caritalindfors" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://github.com/caritalin" target="_blank"><i class="fa-brands fa-git fa-2x"></i> </a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://lean-condition-adc.notion.site/Contact-e6abde466d6748f48792ac3e9471e752" target="_blank"> Info Form <i class="fas fa-file"></i> </a>
+                          </ul>
+                          <ul>
+                          <a class="contactLink" href="https://docs.google.com/forms/d/e/1FAIpQLSeWCWW_CGxPDVWyNfwpibW2gFNMC0TQwhzYKWXDr9tz_9FdtQ/viewform?usp=pp_url" target="_blank"> Contact Form <i class="fas fa-file"></i> </a>
+                          </ul>
                       `;
                       break;
                   default:
