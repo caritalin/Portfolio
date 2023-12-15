@@ -160,6 +160,16 @@ li, ul {
 .contactLink:hover {
     color: rgb(0, 0, 0);
 }
+/* Normaali tila */
+img {
+    transition: filter 0.3s ease-in-out; /* Lisää siirtymäefekti sujuvampaan muutokseen */
+}
+
+/* Hover-tila */
+img:hover {
+    filter: brightness(30%); /* Voit säätää arvoa sen mukaan, kuinka vaaleaksi haluat kuvan muuttuvan */
+}
+
 .project-info {
     max-width: 100%;
     font-style: italic;
