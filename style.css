@@ -256,7 +256,7 @@ img:hover {
     p {
         font-size: 13px;
         text-align: right;
-        padding: 20px 5px 20px 100px;
+        padding: 20px 5px 20px 10px;
         max-width: 90%;
     }
 nav {
@@ -280,4 +280,43 @@ li, ul {
 header {
     padding: 10px 10px 10px 10px;
 }
+
+.box-container {
+    padding-right: 10px; /* Adjust right padding for smaller screens */
+    padding-bottom: 50px; /* Adjust bottom padding for smaller screens */
+}
+
+.info-list li {
+    font-size: 18px; /* Adjust font size for better readability */
+}
+
+.border-container {
+    margin-left: 10px; /* Adjust left margin for smaller screens */
+}
+
+.project-info {
+    max-width: 100%;
+    font-style: italic;
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: -20px;
+}
+
+
+.project-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-bottom: 0;
+    width: 200px; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+.contactLink {
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 16px;
+}
+
+img {
+    height: 50px;
 }
