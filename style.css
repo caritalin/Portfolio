@@ -165,7 +165,6 @@ img {
     border-radius: 5px;
 }
 
-/* Hover-tila */
 img:hover {
     filter: brightness(30%); 
 }
@@ -184,6 +183,25 @@ img:hover {
     /* Add hover effect if needed */
     filter: brightness(30%);
 }
+/* Add styles for the info list */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-list li::before {
+    content: '\2022'; /* Unicode character for a dot */
+    color: #ccc;
+    font-size: 20px;
+    margin-right: 5px;
+    align-items: flex-start;
+}
+
 /* Add styles for the info text container */
 .info-text {
     flex: 1; /* Takes remaining space */
