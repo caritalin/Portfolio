@@ -214,6 +214,9 @@ img:hover {
     align-items: flex-end; /* Align links to the right */
     margin-top: 20px; /* Adjust as needed */
 }
+#info.container {
+    max-width: 100%;
+}
 
 /* Adjust existing styles for better spacing */
 #info p {
