@@ -160,15 +160,49 @@ li, ul {
 .contactLink:hover {
     color: rgb(0, 0, 0);
 }
-/* Normaali tila */
 img {
-    transition: filter 0.3s ease-in-out; /* Lisää siirtymäefekti sujuvampaan muutokseen */
+    transition: filter 0.5s ease-in-out;
+    border-radius: 5px;
 }
 
 /* Hover-tila */
 img:hover {
-    filter: brightness(30%); /* Voit säätää arvoa sen mukaan, kuinka vaaleaksi haluat kuvan muuttuvan */
+    filter: brightness(30%); 
 }
+#info a {
+    color: inherit;
+    text-decoration: none;
+    text-align: right;
+}
+
+#info h2 {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#info a:hover {
+    /* Add hover effect if needed */
+    filter: brightness(30%);
+}
+/* Add styles for the info text container */
+.info-text {
+    flex: 1; /* Takes remaining space */
+}
+
+/* Add styles for the info links container */
+.info-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align links to the right */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Adjust existing styles for better spacing */
+#info p {
+    margin-bottom: 20px;
+}
+
+
 
 .project-info {
     max-width: 100%;
