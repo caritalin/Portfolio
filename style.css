@@ -224,7 +224,7 @@ img:hover {
         font-size: 13px;
         text-align: right;
         padding: 20px 5px 20px 10px;
-        max-width: 90%;
+        max-width: 180px;
     }
 
     nav {
@@ -264,9 +264,7 @@ img:hover {
         color: #8e8e8e;
         margin-top: -20px;
     }
-    #contact {
-        width: 240px;
-    }
+
     .project-box {
         width: 200px;
     }
