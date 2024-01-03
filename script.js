@@ -108,7 +108,7 @@ function loadContent(section) {
                 break;
             case 'Contact':
                 mainContent.innerHTML = `
-<div id="contact" class="info-container"> 
+<div id="contact" class="box-container"> 
 
 
                     <ul>

@@ -264,7 +264,9 @@ img:hover {
         color: #8e8e8e;
         margin-top: -20px;
     }
-
+    #contact {
+        width: 240px;
+    }
     .project-box {
         width: 200px;
     }
@@ -274,6 +276,7 @@ img:hover {
 
     .contactLink {
         font-size: 16px;
+        margin: 10px;
     }
 
     img {
