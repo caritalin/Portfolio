@@ -144,6 +144,23 @@ nav a:hover {
     color: #ccc;
 }
 
+.project-info {
+    max-width: 100%;
+    font-style: italic;
+    font-size: 18px;
+    color: #8e8e8e;
+    margin-top: -20px;
+}
+
+
+.project-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+   /* border-radius: 10px;*/
+    margin-bottom: 0;
+    width: 400px; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
 
 li, ul {
     text-align:initial;
@@ -189,52 +206,6 @@ img:hover {
     margin: 0; /* Remove default margin for better consistency */
 }
 
-.info-list li {
-    font-size: 20px;
-    margin-bottom: 10px;
-    vertical-align: middle; /* Align the text vertically in the middle */
-
-}
-
-.info-list li::before {
-    content: '\2022';
-    color: #ccc;
-    margin-right: 5px;
-}
-
-
-/* Add styles for the info links container */
-.info-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align links to the right */
-    margin-top: 20px; /* Adjust as needed */
-}
-
-/* Adjust existing styles for better spacing */
-#info p {
-    margin-bottom: 20px;
-}
-
-
-
-.project-info {
-    max-width: 100%;
-    font-style: italic;
-    font-size: 18px;
-    color: #8e8e8e;
-    margin-top: -20px;
-}
-
-
-.project-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-   /* border-radius: 10px;*/
-    margin-bottom: 0;
-    width: 400px; /* Adjust the width as needed */
-    box-sizing: border-box;
-}
 
 @media screen and (max-width: 600px) {
     h1 {
@@ -295,6 +266,9 @@ img:hover {
     }
 
     .project-box {
+        width: 200px;
+    }
+    .info-box {
         width: 200px;
     }
 
