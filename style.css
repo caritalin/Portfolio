@@ -59,7 +59,7 @@ h2 {
     margin: 0;
 }
 h3 {
-    font-size: 25px;
+    font-size: 18px;
     margin: 0; /* Remove top and bottom margin for h3 */
 }
 
@@ -146,8 +146,7 @@ nav a:hover {
 
 
 li, ul {
-    font-size: 30px;
-    text-align: initial;
+    text-align:initial;
     list-style: none;
     padding-top: 10px;
 }
@@ -187,25 +186,22 @@ img:hover {
 .info-list {
     list-style: none;
     padding: 0;
+    margin: 0; /* Remove default margin for better consistency */
 }
 
 .info-list li {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
+    vertical-align: middle; /* Align the text vertically in the middle */
+
 }
 
 .info-list li::before {
-    content: '\2022'; /* Unicode character for a dot */
+    content: '\2022';
     color: #ccc;
-    font-size: 20px;
     margin-right: 5px;
-    align-items: flex-start;
 }
 
-/* Add styles for the info text container */
-.info-text {
-    flex: 1; /* Takes remaining space */
-}
 
 /* Add styles for the info links container */
 .info-links {
@@ -213,9 +209,6 @@ img:hover {
     flex-direction: column;
     align-items: flex-end; /* Align links to the right */
     margin-top: 20px; /* Adjust as needed */
-}
-#info.container {
-    max-width: 100%;
 }
 
 /* Adjust existing styles for better spacing */
@@ -243,83 +236,73 @@ img:hover {
     box-sizing: border-box;
 }
 
-
-/* Mobile adjustments */
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 30px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 10px;
     }
+
     h2 {
         font-size: 13px;
     }
+
     p {
         font-size: 13px;
         text-align: right;
         padding: 20px 5px 20px 10px;
         max-width: 90%;
     }
-nav {
-    font-size: 15px;
-}
-nav a.selected::before {
-    /* Style for the dot */
-    color: #ccc;
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    left: -4px;
-    transform: translateY(-50%);
 
-}
-li, ul {
-    font-size: 15px;
-    padding-top: 10px;
-}
+    nav {
+        font-size: 15px;
+    }
 
-header {
-    padding: 10px 10px 10px 10px;
-}
+    nav a.selected::before {
+        /* Style for the dot */
+        color: #ccc;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: -4px;
+        transform: translateY(-50%);
+    }
 
-.box-container {
-    padding-right: 10px; /* Adjust right padding for smaller screens */
-    padding-bottom: 50px; /* Adjust bottom padding for smaller screens */
-}
+    li,
+    ul {
+        font-size: 15px;
+        padding-top: 10px;
+    }
 
-.info-list li {
-    font-size: 18px; /* Adjust font size for better readability */
-}
+    header {
+        padding: 10px;
+    }
 
-.border-container {
-    margin-left: 10px; /* Adjust left margin for smaller screens */
-}
-
-.project-info {
-    max-width: 100%;
-    font-style: italic;
-    font-size: 12px;
-    color: #8e8e8e;
-    margin-top: -20px;
-}
+    .box-container {
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
 
 
-.project-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    margin-bottom: 0;
-    width: 200px; /* Adjust the width as needed */
-    box-sizing: border-box;
-}
-.contactLink {
-    color: rgb(215, 215, 215);
-    text-decoration: none;
-    transition: 500ms;
-    font-size: 16px;
-}
+    .project-info {
+        max-width: 100%;
+        font-style: italic;
+        font-size: 12px;
+        color: #8e8e8e;
+        margin-top: -20px;
+    }
 
-img {
-    height: 50px;
+    .project-box {
+        width: 200px;
+    }
+
+    .contactLink {
+        font-size: 16px;
+    }
+
+    img {
+        height: 50px;
+    }
 }
