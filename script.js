@@ -27,7 +27,7 @@ function loadContent(section) {
         switch (section) {
             case 'Projects':
                 mainContent.innerHTML = `
-                <ul>
+    <ul>
       <li class="project-item">
           <div class="project-box">
               <a class="contactLink" href="https://caritalin.github.io/OldPortfolio/" target="_blank">Old Portfolio<i class=""></i></a>
