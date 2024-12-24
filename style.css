@@ -27,7 +27,6 @@ html, body {
     padding: 0;
     overflow: hidden; /* Prevent default body overflow */
     scroll-behavior: smooth;
-
 }
 
 html {
@@ -35,7 +34,6 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
   }
   
   body {

@@ -54,24 +54,8 @@ function loadContent(section) {
   <ul>
       <li class="project-item">
           <div class="project-box">
-              <a class="contactLink" href="https://caritalin.github.io/weatherstatistics/" target="_blank">Weather page with statistic data<i class=""> (Broken connection)</i></a>
+              <a class="contactLink" href="https://caritalin.github.io/weatherstatistics/" target="_blank">Weather page with statistic data<i class=""></i></a>
               <p class="project-info">Made: 2023 | Course Work</p>
-          </div>
-      </li>
-  </ul>
-  <ul>
-      <li class="project-item">
-          <div class="project-box">
-              <a class="contactLink" href="https://caritalin.github.io/CV_in_English/" target="_blank">Old CV in English<i class=""></i> </a>
-              <p class="project-info">Made: 2023 | Curriculum Vitae</p>
-          </div>
-      </li>
-  </ul>
-  <ul>
-      <li class="project-item">
-          <div class="project-box">
-              <a class="contactLink" href="https://caritalin.github.io/CV_in_Finnish/" target="_blank">Old CV in Finnish<i class=""></i> </a>
-              <p class="project-info">Made: 2023 | Curriculum Vitae</p>
           </div>
       </li>
   </ul>
