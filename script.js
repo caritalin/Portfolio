@@ -116,3 +116,4 @@ function loadContent(section) {
         boxContainer.style.opacity = 1;
     }, 500); // 500 milliseconds (0.5 seconds) fade-out time
 }
+
