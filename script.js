@@ -27,10 +27,10 @@ function loadContent(section) {
         switch (section) {
             case 'Projects':
                 mainContent.innerHTML = `
-                <ul>
+    <ul>
       <li class="project-item">
           <div class="project-box">
-              <a class="contactLink" href="https://caritalin.github.io/OldPortfolio/" target="_blank">Old Portfolio<i class=""></i></a>
+              <a class="contactLink" href="https://caritalin.github.io/OldPortfolio/" target="_blank">Previous Portfolio<i class=""></i></a>
               <p class="project-info">2022 | Portfolio</p>
           </div>
       </li>
@@ -59,6 +59,25 @@ function loadContent(section) {
           </div>
       </li>
   </ul>
+<<<<<<< HEAD
+=======
+  <ul>
+      <li class="project-item">
+          <div class="project-box">
+              <a class="contactLink" href="https://caritalin.github.io/CV_in_English/" target="_blank">Previous CV in English<i class=""></i> </a>
+              <p class="project-info">Made: 2023 | Curriculum Vitae</p>
+          </div>
+      </li>
+  </ul>
+  <ul>
+      <li class="project-item">
+          <div class="project-box">
+              <a class="contactLink" href="https://caritalin.github.io/CV_in_Finnish/" target="_blank">Previous CV in Finnish<i class=""></i> </a>
+              <p class="project-info">Made: 2023 | Curriculum Vitae</p>
+          </div>
+      </li>
+  </ul>
+>>>>>>> f62b0542ff33bf5ef303ad0a83a48d1df08ff95a
 
                 `;
                 break;
